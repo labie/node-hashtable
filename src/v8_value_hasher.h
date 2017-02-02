@@ -4,13 +4,8 @@
 #include <string>
 #include <iostream>
 #include <node.h>
-#ifdef __APPLE__
-#include <tr1/unordered_set>
-#define hash std::tr1::hash
-#else
 #include <unordered_set>
 #define hash std::hash
-#endif
 
 typedef Nan::Persistent<v8::Value, Nan::CopyablePersistentTraits<v8::Value> > CopyablePersistent;
 
